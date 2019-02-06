@@ -4,29 +4,29 @@ auto_deploy: false
 admin_path: ''
 webhook_url: 
 sections:
-- type: heading
-  label: Content
 - type: jekyll-posts
-  label: Posts
+  label: Reportaje
   create: all
   templates:
+  - posts
   - post
 - type: jekyll-pages
-  label: Pages
+  label: Domenii
   create: all
   templates:
+  - posts
   - landing-page
   - default
 - type: directory
   path: _people
-  label: People
+  label: Echipa
   create: all
   match: "*"
   templates:
   - person
 - type: directory
   path: _projects
-  label: Projects
+  label: Proiecte
   create: all
   match: "*"
   templates:
